@@ -3,15 +3,35 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styling/main.css">
+
     <title>Exercise Two</title>
   </head>
   <body>
     <div class="main_container">
       <div class="main_header">
+        <!-- <element attribute_1="value" attribute_2="value"></element> -->
         <button type="button">button1</button>
-        <button type="button">button2</button>
+        <button id="my_button" type="button">button2</button>
         <button type="button">button3</button>
       </div>
+      <div id="my_div">
+        Before Javascript
+      </div>
     </div>
+    <script>
+    // ------------- onClick for Div -----------------------
+      document.getElementById("my_div").addEventListener("click", sayHi);
+      // document.getElementById("my_div").innerHTML = "After Javascript";
+      function sayHi(){
+        alert("Hi");
+      }
+
+   // ------------- onClick for Button 2 -----------------------
+      document.getElementById("my_button").addEventListener("click",sayHi);
+      function sayHi(){
+        alert("You pressed button 2");
+      }
+
+    </script>
   </body>
 </html>
