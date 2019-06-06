@@ -12,7 +12,8 @@
         <!-- <element attribute_1="value" attribute_2="value"></element> -->
         <button type="button">button1</button>
         <button id="my_button" type="button">button2</button>
-        <button type="button">button3</button>
+        <button id="my_button3" type="button">button3</button>
+        <button id="my_button4" type="button">button4</button>
       </div>
       <div id="my_div">
         Before Javascript
@@ -25,13 +26,21 @@
       function sayHi(){
         alert("Hi");
       }
-
    // ------------- onClick for Button 2 -----------------------
       document.getElementById("my_button").addEventListener("click",sayHi);
       function sayHi(){
         alert("You pressed button 2");
       }
-
+      // ------------- onClick for Button 2 -----------------------
+         document.getElementById("my_button3").addEventListener("click",sayHi);
+         function sayHi(){
+           alert("You pressed button 3");
+      }
+         // ------------- onClick for Button 2 -----------------------
+            document.getElementById("my_button4").addEventListener("click",sayHi);
+            function sayHi(){
+              alert("You pressed button 4");
+      }
     </script>
   </body>
 </html>
