@@ -7,11 +7,11 @@
     <title>Exercise Two</title>
   </head>
   <body>
-    <div class="main_container">
-      <div class="main_header">
+    <div class="main_container" id="main_container_1">
+      <div class="main_header" id="main_header_1">
         <!-- <element attribute_1="value" attribute_2="value"></element> -->
         <button type="button">button1</button>
-        <button id="my_button" type="button">button2</button>
+        <button id="my_button2" type="button">button2</button>
         <button id="my_button3" type="button">button3</button>
         <button id="my_button4" type="button">button4</button>
       </div>
@@ -20,27 +20,18 @@
       </div>
     </div>
     <script>
-    // ------------- onClick for Div -----------------------
-      document.getElementById("my_div").addEventListener("click", sayHi);
-      // document.getElementById("my_div").innerHTML = "After Javascript";
-      function sayHi(){
-        alert("Hi");
-      }
-   // ------------- onClick for Button 2 -----------------------
-      document.getElementById("my_button").addEventListener("click",sayHi);
-      function sayHi(){
-        alert("You pressed button 2");
-      }
-      // ------------- onClick for Button 2 -----------------------
-         document.getElementById("my_button3").addEventListener("click",sayHi);
-         function sayHi(){
-           alert("You pressed button 3");
-      }
-         // ------------- onClick for Button 2 -----------------------
-            document.getElementById("my_button4").addEventListener("click",sayHi);
-            function sayHi(){
-              alert("You pressed button 4");
-      }
+      document.getElementById("my_button2").addEventListener("click",saySomething);
+      document.getElementById("my_button4").addEventListener("click",saySomething1);
+    function saySomething(){
+      alert("You pressed button 2");
+    }
+    function saySomething1(){
+      alert("You pressed button 4");
+    }
+    </script>
+    <h1>Something in Between Script Tags</h1>
+    <script>
+
     </script>
   </body>
 </html>
